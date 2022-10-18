@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Roll Dice 🎲</title>
+</head>
+<body>
+    <main>
+        <section class="player player--0 player--active">
+            <div class="user-info">
+                <h2 class="name name--active">Player 1</h2>
+                <p class="score" id="score--0"></p>
+                <h3 class="winner winner--0 hidden">Winner 🎉</h3>
+            </div>
+            <div class="current">
+                <p class="current-label">Current</p>
+                <p class="current-score" id="current--0">0</p>
+            </div>
+        </section>
+        <section class="player player--1">
+            <div class="user-info">
+                <h2 class="name">Player 2</h2>
+                <p class="score" id="score--1">0</p>
+                <h3 class="winner winner--1 hidden">Winner 🎉</h3>
+            </div>
+            <div class="current">
+                <p class="current-label">Current</p>
+                <p class="current-score" id="current--1">0</p>
+            </div>
+        </section>
+        <img src="./assets/images/dice-1.png" alt="dice" class="dice-img">
+        <button class="new-game absolute">🔄 New Game</button>
+        <button class="roll-dice absolute">🎲 Roll Dice</button>
+        <button class="hold absolute">🤚🏻 Hold</button>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>

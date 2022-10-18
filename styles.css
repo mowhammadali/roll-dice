@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --primary-color: #c7365f;
+    --light-color: #f2f2f2;
+    --dark-color: #333;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: #753682;
+    background-image: linear-gradient(90deg, #753682 25%, #bf2e34 80%);
+}
+
+main {
+    position: relative;
+    height: 90vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    background-color: #ffffff59;
+    backdrop-filter: blur(200px);
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    flex-basis: 50%;
+    transition: all .8s ease-in-out;
+}
+
+.player--0 {
+    border-radius: 12px 0 0 12px;
+}
+
+.player--1 {
+    border-radius: 0 12px 12px 0;
+}
+
+/* player active */
+.player--active{
+    background-color: #ffffff66;
+}
+
+.player--winner{
+    background-color: #2f2f2f !important;
+}
+
+.user-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.name{
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--dark-color);
+    transition: all .4s ease-in-out;
+}
+
+/* name active */
+.name--active{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.name--winner{
+    color: var(--primary-color) !important;
+}
+
+.score{
+    font-size: 50px;
+    color: var(--primary-color);
+}
+
+.winner{
+    position: absolute;
+    bottom: -50px;
+    font-size: 30px;
+    color: var(--dark-color);
+}
+
+.winner--winner{
+    color: var(--primary-color);
+}
+
+.current{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 70px;
+    border-radius: 14px;
+    background-color: var(--primary-color);
+}
+
+.current-label{
+    font-size: 22px;
+    color: var(--light-color);
+}
+
+.current-score{
+    font-size: 26px;
+    color: var(--light-color);
+}
+
+.dice-img{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 35%;
+    width: 100px;
+}
+
+.absolute{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    color: var(--dark-color);
+    background-color: #ffffff59;
+    backdrop-filter: blur(200px);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.absolute:active{
+    transform: translate(50% , 15%);
+}
+
+.new-game{
+    top: 10%;
+}
+
+.roll-dice{
+    bottom: 25%;
+}
+
+.hold{
+    bottom: 10%;
+}
+
+/* hide */
+.hidden{
+    display: none;
+}
