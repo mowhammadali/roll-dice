@@ -51,7 +51,7 @@ const holdHandler = () => {
     document.querySelector(`#score--${activePlayer}`).textContent = scores[activePlayer];
     
     // if score >= 100 => this player is winner
-    if (scores[activePlayer] >= 25) {
+    if (scores[activePlayer] >= 100) {
         console.log(document.querySelector(`.player--${activePlayer}`));
         document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
         document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
